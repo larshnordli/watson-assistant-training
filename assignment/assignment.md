@@ -7,7 +7,7 @@
 6. Click `Create`
 
 ## 2. Create Intents, Entities and form a dialog flow
-2. Click on the `Launch Tool`-button to get into the service
+2. Click on the `Launch Tool`-button to get into the service. Click the `Workspaces` tab and select the blank workspace.
 3. Create intents and entities as you see fit. Use the tabs `Intents` and `Entities` to specify these
 4. Go to the `Dialog` tab to create a dialog. Use the `Try me` tab on the top right to test your conversation and dialog flow.
 
