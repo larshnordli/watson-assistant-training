@@ -30,12 +30,12 @@ Credentials 'Auto-generated service credentials' from 'tone_analyzer' service in
 See more: https://console.bluemix.net/docs/openwhisk/binding_services.html#binding_services 
 
 ## 4. Finish creating and test your action
-1. Go back to Menu > Function
+1. Go back to Menu > Functions
 2. Click Actions in the left pane
 3. Click your action, e.g. `tone-analyzer`
 4. Make sure you're in the code view, if not press `Code` in the left pane
 5. Paste the code from here: 
-```
+```javascript
 var ToneAnalyzerV3 = require('watson-developer-cloud/tone-analyzer/v3');
 
 function main(payload) {
@@ -63,7 +63,7 @@ exports.main = main;
 ```
 6. Click `Save` in the top right corner and test the action by clicking Invoke. You will most likely get an error at this point, as you don't have any input specified.
 7. Click `Change Input` and paste the following: 
-```
+```json
 {"userInput": "This is so stupid and useless"}
 ```
 8. Click `Apply` and re-test the action by invoking it.
@@ -75,7 +75,7 @@ exports.main = main;
 2. Open the node that you want to invoke the action
 3. Click the three dots just under "If bot recognizes" and click `Open JSON Editor`.
 4. Edit (or add) the `context` property to the following:
-```
+```json
 "context": {
     "payload": "payload",
     "private": {
@@ -87,7 +87,7 @@ exports.main = main;
   },
 ``` 
 5. Under the `output` property, paste the following:
-```
+```json
 "actions": [
     {
       "name": "/<YOUR ORG>_<YOUR SPACE>/<YOUR ACTION NAME>",
@@ -101,3 +101,6 @@ exports.main = main;
   ]
 ```
 5. The result of your action's output can be viewed in the dialog node by writing `<? context.payload.processedInput ?>` or shorthand `$payload.processedInput` as a response. If you get an error having it as response, click the `Manage Context` link in the top right and see the result.
+6. Experiment with advanced conditions in the node, try for example to make the bot answer differently if the analyzed tone is Anger.
+
+**Good luck!**

@@ -10,3 +10,5 @@
 2. Click on the `Launch Tool`-button to get into the service
 3. Create intents and entities as you see fit. Use the tabs `Intents` and `Entities` to specify these
 4. Go to the `Dialog` tab to create a dialog. Use the `Try me` tab on the top right to test your conversation and dialog flow.
+
+**Good luck!**

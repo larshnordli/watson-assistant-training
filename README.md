@@ -14,7 +14,7 @@ The chat bot should allow the user to:
 - Ask for contact information (phone number + e-mail)
 - Get an overview of what the bot can do
 
-Step by step can be found here.
+See [step by step](/assignment/assignment.md)
 
 Try experimenting with ordering multiple pizzas in the same sentence.
 
@@ -24,4 +24,4 @@ If you have time or you want an extra challenge:
 - The cloud function can use another Watson Service (f.ex. Tone Analyzer or Natural Language Processing)
 - Alter the way the chatbot answers based on the result from the secondary service
 
-Step by step can be found here.
+See [step by step](/extra/extra.md)
