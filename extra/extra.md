@@ -68,6 +68,7 @@ exports.main = main;
 ```
 8. Click `Apply` and re-test the action by invoking it.
 9. Take note of action username and password through going to Endpoints in the left pane, click the API-KEY link under REST API, and copy the key on the right. Username is before `:`, and password is after. Paste it in a note or similar, you will need this for the next step.
+10. Take note of your spacename (or organization name + space). This is shown on the left side of where you got the username and password.
 
 ## 5. Connect the action to the Watson Assistant Dialog
 1. Go back to your Watson Assistant dialog.  
@@ -99,4 +100,4 @@ exports.main = main;
     }
   ]
 ```
-5. The result of your action's output will exist in `context.payload.processedInput` or shorthand `$payload.processedInput`
+5. The result of your action's output can be viewed in the dialog node by writing `<? context.payload.processedInput ?>` or shorthand `$payload.processedInput` as a response. If you get an error having it as response, click the `Manage Context` link in the top right and see the result.
