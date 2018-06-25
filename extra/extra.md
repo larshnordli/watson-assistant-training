@@ -64,6 +64,7 @@ exports.main = main;
 6. Click `Save` in the top right corner and test the action by clicking Invoke. You will most likely get an error at this point, as you don't have any input specified.
 7. Click `Change Input` and paste the following: 
 ```
+{"userInput": "This is so stupid and useless"}
 ```
 8. Click `Apply` and re-test the action by invoking it.
 9. Take note of action username and password through going to Endpoints in the left pane, click the API-KEY link under REST API, and copy the key on the right. Username is before `:`, and password is after. Paste it in a note or similar, you will need this for the next step.
@@ -72,7 +73,7 @@ exports.main = main;
 1. Go back to your Watson Assistant dialog.  
 2. Open the node that you want to invoke the action
 3. Click the three dots just under "If bot recognizes" and click `Open JSON Editor`.
-4. Edit the `context` property to the following:
+4. Edit (or add) the `context` property to the following:
 ```
 "context": {
     "payload": "payload",
