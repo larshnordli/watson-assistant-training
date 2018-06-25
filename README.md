@@ -5,11 +5,11 @@
 ### Requirements/frame:
 The chat bot should allow the user to:
 - Order a pizza
--- The user can choose from 3 types of pizza (cheese, pepperoni and pineapple)
--- The user can choose from 3 sizes of pizza (small, medium, large)
--- Thse user should be able to choose whether the pizza should be
---- Delivered (in that case include address)
---- Picked up
+    - The user can choose from 3 types of pizza (cheese, pepperoni and pineapple)
+    - The user can choose from 3 sizes of pizza (small, medium, large)
+    - Thse user should be able to choose whether the pizza should be
+        - Delivered (in that case include address)
+        - Picked up
 - Get opening hours
 - Ask for contact information (phone number + e-mail)
 - Get an overview of what the bot can do
